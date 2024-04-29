@@ -18,7 +18,7 @@
 <body>
 
   <!-- Sign-up form start -->
-<div class="container">
+<div class="container" id="container">
   <section class="hero">
   <img src="assets/images/illustration-sign-up-mobile.svg" class="illustration" alt="illustration of a sing up page">
   </section>
@@ -30,8 +30,8 @@
       <li>Measuring to ensure updates are a success</li>
       <li>And much more!</li>
     </ul>
-    <form>
-      <label for="email">Email adress <span>Valid email required</span></label><br>
+    <form id="subscriptionForm">
+      <label for="email">Email adress <span class="emailError">Valid email required</span></label><br>
       <input type="text" id="email" name="email" placeholder="caodrugari@gmail.com">
       <button>Subscribe to monthly newsletter</button>
     </form>
@@ -41,20 +41,19 @@
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-<!-- 
-  Thanks for subscribing!
+  <div id="success">
+    <div class="success-wrapper">
+    <img src="assets/images/icon-success.svg" alt="">
+    <h3>Thanks for subscribing!</h3>
+    <p id="success-message">A confirmation email has been sent to <span id="email-bold"></span> Please open it and click the button inside to confirm your subscription</p>
+    <button id="dismiss">Dismiss message</button>
+  </div>
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
+  </div>
 
-  Dismiss message -->
 
   <!-- Success message end -->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Boris</a>.
-  </div>
   <script src="index.js"></script>
 </body>
 </html>
